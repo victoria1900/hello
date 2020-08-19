@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -17,35 +18,42 @@
         <li><a href="#">Клиенты</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
-        <li><a href="#"><img src="img/cart-icon.svg" width="14" height="18" alt="корзина">Корзина</a></li>
+        <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <h1>Студия нёрдс</h1>
+      <h1 class="visually-hidden">Студия нёрдс</h1>
       <div>
         <p>Долго, дорого, скурпулезно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="link">Узнать больше</a>
-        <!--не поняла как сделать кнопку для переключения слайдов-->
+        <a href="#">Узнать больше</a>
+        <div>
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+        </div>
       </div>
     </section>
     <section>
       <ul>
         <li>
+          <img src="img/illustration-1 (1).png" width="300" height="146" alt="веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним
             после того, как увидит наш сайт</p>
           <a href="#" class="link">Заказать</a>
         </li>
         <li>
+          <img src="img/illustration-2.png" width="300" height="146" alt="приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в
             AppStore и Google Play</p>
           <a href="#" class="link">Заказать</a>
         </li>
         <li>
+          <img src="img/illustration-3.png" width="300" height="146" alt="презентации">
           <h3>Презентации</h3>
           <p>вы даже не подозреваете,
             насколько вы изумительны!</p>
@@ -61,14 +69,16 @@
           покладая рук, как роботы.</p>
         <span>выполняем заказы на разработку:</span>
         <ul>
+
           <li>Веб-сайтов любой сложности</li>
+
           <li>Мобильных приложений для ios и android</li>
+
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
       <div>
-        <img src="" alt="">
-        <!--не нашла фотографию-->
+        <img src="img/nerdsillustration.png" width="360" height="208" alt="логотип нердс">
         <table>
           <caption>С 2004 года любим точность во всем:</caption>
           <tr>
@@ -79,35 +89,34 @@
           <td>Уровень самоотдачи</td>
           <td>Соблюдение уроков</td>
           <td>Минимальная предоплата</td>
-        </tr>
+          </tr>
         </table>
       </div>
     </section>
     <section>
       <div>
         <ul>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/name.format" alt="html academy"></a></li>
-          <li><a href="#"><img src="" alt="borodinski"></a></li>
-          <li><a href="#"><img src="" alt="pink"></a></li>
-          <li><a href="#"><img src="" alt="mishka"></a></li>
+          <li><a href="#"><img src="img/logo-1.png.png" width="199" height="68" alt="html academy"></a></li>
+          <li><a href="#"><img src="img/logo-2.png.png" width="209" height="90" alt="borodinski"></a></li>
+          <li><a href="#"><img src="img/logo-3.png.png" width="185" height="52" alt="pink"></a></li>
+          <li><a href="#"><img src="img/logo-4.png.png" width="173" height="84" alt="mishka"></a></li>
         </ul>
       </div>
     </section>
     <section>
-      <img src="" alt="">
-      <!--нужно вырезать из фотошопа-->
-    </section>
-    <footer>
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="80" height="76" alt="vk"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="80" height="76" alt="facebook"></a></li>
-        <li><a href="#"><img src="IMG/insta-icon.svg" width="80" height="76" alt="instagram"></a></li>
-      </ul>
-      <span>Давайте дружить, это выгодно!</span>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
+      <img src="img/Слой_2.png" width="1440" height="416"alt="карта">
 
+    </section>
   </main>
+  <footer>
+    <ul>
+      <li><a href="#"><img src="img/vk-icon.svg" width="79" height="79" alt="vk"></a></li>
+      <li><a href="#"><img src="img/fb-icon.svg" width="79" height="79" alt="facebook"></a></li>
+      <li><a href="#"><img src="img/insta-icon.svg" width="79" height="79" alt="instagram"></a></li>
+    </ul>
+    <span>Давайте дружить, это выгодно!</span>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
 </body>
 
 </html>
