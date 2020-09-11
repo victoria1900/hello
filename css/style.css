@@ -96,7 +96,8 @@ body {
 }
 
 .main-nav__img {
-  margin-top: 44px;
+  margin-top: 41px;
+  margin-left: 2px;
 }
 
 .main-nav__link__logo:focus {
@@ -112,7 +113,7 @@ body {
 }
 
 .main-nav__logo {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .main-nav {
@@ -408,7 +409,7 @@ body {
   text-transform: uppercase;
   margin-top: 28px;
   margin-left: 2px;
-  margin-bottom: 54px;
+  margin-bottom: 49px;
 }
 
 .about-two__persent {
@@ -416,9 +417,10 @@ body {
   font-family: inherit;
   font-size: 45px;
   font-weight: 700;
-  line-height: 10px;
-  padding-left: 13px;
-  padding-right: 13px;
+  line-height: 25px;
+  padding-left: 0px;
+  padding-right: 16px;
+  padding-bottom: 7px;
 }
 
 .about-two__text {
@@ -459,7 +461,7 @@ body {
   position: relative;
   padding-top: 53px;
   padding-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 .copyright-list::before {
@@ -656,12 +658,12 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #fb565a;
-  padding: 18px 43px 17px 43px;
+  padding: 18px 43px 14px 43px;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   width: 221px;
-  margin-top: 29px;
+  margin-top: 32px;
 }
 
 .write-me__link:hover {
@@ -671,6 +673,18 @@ body {
 .write-me__link:focus {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-title {
+  font-family: inherit;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  background-color: #eeeeee;
+  padding-top: 71px;
+  padding-bottom: 72px;
+  margin-top: 0px;
 }
 
 /*********************SLIDER**********************/
