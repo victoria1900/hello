@@ -29,12 +29,12 @@
     <div class="catalog">
       <h1 class="catalog-title"> Магазин готовых шаблонов</h1>
     </div>
-    <section class="products">
+    <section class="products container">
       <div class="products-cost">
         <form class="products-form" action="https://echo.htmlacademy.ru" method="GET">
           <h2 class="products-form__title">СТОИМОСТЬ:</h2>
-          <fieldset class="products-form">
-            <div>
+          <fieldset class="products-form fieldset">
+            <div class="products-form__buttons">
               <div>
                 <div class="products-form__buttons">
                   <button class="products__button-first" type="button"></button>
@@ -43,14 +43,14 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="products-filter">
-            <legend class=" products-filter__title">Сетка:</legend>
+          <fieldset class="products-filter fieldset">
+            <legend class=" products-filter__title">СЕТКА:</legend>
             <p class="products-filter__line">
               <input class="products-filter__grid" id="adaptive" name="grid" value="" type="radio" checked>
               <label class="products-filter__subtitle" for="adaptive">Адаптивная</label>
             </p>
             <p class="products-filter__line">
-              <input class="products-filter__grid" id="" name="grid" value="fix" type="radio">
+              <input class="products-filter__grid" id="fix" name="grid" value="fix" type="radio">
               <label class="products-filter__subtitle" for="fix">Фиксированная</label>
             </p>
             <p class="products-filter__line">
@@ -58,7 +58,7 @@
               <label class="products-filter__subtitle" for="rubber">Резиновая</label>
             </p>
           </fieldset>
-          <fieldset class="products-filter-second">
+          <fieldset class="products-filter-second fieldset">
             <legend class="products-filter-second__title">ОСОБЕННОСТИ:</legend>
             <p class="products-filter-second__line">
               <input class="products-filter-second__checkbox" id="slider" name="slider" type="checkbox">
@@ -73,8 +73,7 @@
               <label class="products-filter-second__news" for="news">Новости</label>
             </p>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" class="products-filter__checkbox" id="gallery"
-                name="gallery" type="checkbox">
+              <input class="products-filter-second__checkbox" id="gallery" name="gallery" type="checkbox">
               <label class="products-filter-second__gallery" for="gallery">Галерея</label>
             </p>
             <p class="products-filter-second__line">
@@ -82,122 +81,122 @@
               <label class="products-filter-second__basket" for="basket">Корзина</label>
             </p>
           </fieldset>
-          <button class="products-form__button" type="submit">Показать</button>
+          <button class="products-form__button" type="submit">ПОКАЗАТЬ</button>
         </form>
       </div>
-      <div>
-        <div>
-          <h2>СОРТИРОВАТЬ:</h2>
-          <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По названию</a></li>
-            <li><img src="#" alt="icon"></li>
-            <li><img src="#" alt="icon"></li>
+      <div class="products-booklet">
+        <div class="products-booklet">
+          <div class="products-booklet__nav">
+            <h2 class="products-booklet__title">СОРТИРОВАТЬ:</h2>
+            <ul class="products-booklet__list">
+              <li><a class="products-booklet__link" href="#">ПО ЦЕНЕ</a></li>
+              <li><a class="products-booklet__link" href="#">ПО ТИПУ</a></li>
+              <li><a class="products-booklet__link" href="#">ПО НАЗВАНИЮ</a></li>
+              <li class="products-booklet__img"><img src="img/icon-down-dir.svg" alt="icon"></li>
+              <li class="products-booklet__img"><img src="img/icon-up-dir.svg" alt="icon"></li>
+            </ul>
+          </div>
+          <ul class="products-booklet-list-2">
+            <li class="products-booklet-list-2__catalog-1">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/sedona.png" alt="SEDONA">
+              <div class="products-booklet-list-2__1">
+                <a class="products-booklet-list-2__link" href="#">SEDONA</a>
+                <p class="products-booklet-list-2__subtitle">Информационный сайт<br>
+                  для туристов</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-booklet-list-2__catalog-2">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/pink.png" alt="PINK">
+              <div class="products-booklet-list-2__2">
+                <a class="products-booklet-list-2__link" href="#">PINK APP</a>
+                <p class="products-booklet-list-2__subtitle">Продуктовый лендинг
+                  приложения для iOS и Android</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-booklet-list-2__catalog-3">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/barbershop.png" alt="BARBERSHOP">
+              <div class="products-booklet-list-2__3">
+                <a class="products-booklet-list-2__link" href="#">BARBERSHOP</a>
+                <p class="products-booklet-list-2__subtitle">Сайт салона красоты.<br>Для мужчин, да.</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-booklet-list-2__catalog-4">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/mishka.png" alt="MISHKA">
+              <div class="products-booklet-list-2__4">
+                <a class="products-booklet-list-2__link" href="#">MISHKA</a>
+                <p class="products-booklet-list-2__subtitle">Интернет-магазин<br>
+                  вязаных игрушек</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-booklet-list-2__catalog-5">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/aplus.png" alt="A PLUS">
+              <div class="products-booklet-list-2__5">
+                <a class="products-booklet-list-2__link" href="#">A PLUS</a>
+                <p class="products-booklet-list-2__subtitle">Лендинг курсов повышения квалификации</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-booklet-list-2__catalog-6">
+              <div class="products-booklet-list-2__element">
+                <img class="products-booklet-list-2__picture" src="img/browser.svg" alt="line">
+              </div>
+              <img class="products-booklet-list-2__img" src="img/kvast.png" alt="КВАСТ">
+              <div class="products-booklet-list-2__6">
+                <a class="products-booklet-list-2__link" href="#">КВАСТ</a>
+                <p class="products-booklet-list-2__subtitle">Промо-сайт производителя
+                  крафтового кваса</p>
+                <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
+              </div>
+            </li>
           </ul>
-        </div>
-        <ul>
-          <li>
-            <div>
-              <!-- <div>SVG</div> -->
-            </div>
-            <img src="#" alt="SEDONA">
-            <div>
-              <a href="#">Sedona</a>
-              <p>Информационный сайт
-                для туристов</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <!-- SVG -->
-            </div>
-            <img src="#" alt="PINK">
-            <div>
-              <a href="#">Pink App</a>
-              <p>Продуктовый лендинг
-                приложения для iOS и Android</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <!-- SVG -->
-            </div>
-            <img src="#" alt="Barbershop">
-            <div>
-              <a href="#">Barbershop</a>
-              <p>Сайт салона красоты.Для мужчин, да.</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <!-- SVG -->
-            </div>
-            <img src="#" alt="MISHKA">
-            <div>
-              <a href="#">MISHKA</a>
-              <p>Интернет-магазин
-                вязаных игрушек</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <!-- SVG -->
-            </div>
-            <img src="#" alt="A Plus">
-            <div>
-              <a href="#">A Plus</a>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <!-- SVG -->
-            </div>
-            <img src="#" alt="КВАСТ">
-            <div>
-              <a href="#">КВАСТ</a>
-              <p>Промо-сайт производителя
-                крафтового кваса</p>
-              <a href="#">9 900 руб.</a>
-            </div>
-          </li>
-        </ul>
-        <div>
-          <ul>
-            <li>
-              <a href="#">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li><a href="#">следующая</a></li>
-          </ul>
+          <div class="products-booklet-page">
+            <ul class="products-booklet-page__list">
+              <li class="products-booklet-page__element">
+                <a class="products-booklet-page__link" href="#">1</a>
+              </li>
+              <li class="products-booklet-page__element">
+                <a class="products-booklet-page__link" href="#">2</a>
+              </li>
+              <li class="products-booklet-page__element">
+                <a class="products-booklet-page__link" href="#">3</a>
+              </li>
+              <li class="products-booklet-page__element"><a class="products-booklet-page__link-2" href="#">СЛЕДУЮЩАЯ</a>
+              </li>
+            </ul>
 
-        </div>
+          </div>
     </section>
-  </main>
-  <section class="map">
-    <iframe class="google-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598444264980!5m2!1sru!2sru"
-      style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <div class="write-me">
-      <span class="write-me__title">NЁRDS DESIGN STUDIO</span>
-      <p class="write-me__adress">191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8</p>
-      <a class="write-me__number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a class="write-me__link" href="#">Напишите нам</a>
-    </div>
-  </section>
+    <section class="map">
+      <iframe class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598444264980!5m2!1sru!2sru"
+        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="write-me">
+        <span class="write-me__title">NЁRDS DESIGN STUDIO</span>
+        <p class="write-me__adress">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+        <a class="write-me__number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="write-me__link" href="#">Напишите нам</a>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <ul class="footer-list">
