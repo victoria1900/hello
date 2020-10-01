@@ -34,51 +34,60 @@
         <form class="products-form" action="https://echo.htmlacademy.ru" method="GET">
           <h2 class="products-form__title">СТОИМОСТЬ:</h2>
           <fieldset class="products-form fieldset">
-            <div class="products-form__buttons">
-              <div>
-                <div class="products-form__buttons">
-                  <button class="products__button-first" type="button"></button>
-                  <button class="products__button-second" type="button"></button>
+            <div class="products-form__wrapper">
+              <div class="products-form__background">
+                <div class="products-form__scale">
+                  <div class="products-form__bar">
+                    <button class="products-form__btn products-form__btn--left" type="button"></button>
+                    <button class="products-form__btn products-form__btn--right" type="button"></button>
+                  </div>
                 </div>
+              </div>
+              <div class="products-form__price">
+                <label class="products-form__min">ОТ<input type="text" value="0"></label>
+                <label class="products-form__max">ДО<input type="text" value="15 000"></label>
               </div>
             </div>
           </fieldset>
           <fieldset class="products-filter fieldset">
             <legend class=" products-filter__title">СЕТКА:</legend>
             <p class="products-filter__line">
-              <input class="products-filter__grid" id="adaptive" name="grid" value="" type="radio" checked>
+              <input class="products-filter__grid visually-hidden" id="adaptive" name="grid" value="" type="radio"
+                checked>
               <label class="products-filter__subtitle" for="adaptive">Адаптивная</label>
             </p>
             <p class="products-filter__line">
-              <input class="products-filter__grid" id="fix" name="grid" value="fix" type="radio">
+              <input class="products-filter__grid visually-hidden" id="fix" name="grid" value="fix" type="radio">
               <label class="products-filter__subtitle" for="fix">Фиксированная</label>
             </p>
             <p class="products-filter__line">
-              <input class="products-filter__grid" id="rubber" name="grid" value="" type="radio">
+              <input class="products-filter__grid visually-hidden" id="rubber" name="grid" value="" type="radio">
               <label class="products-filter__subtitle" for="rubber">Резиновая</label>
             </p>
           </fieldset>
           <fieldset class="products-filter-second fieldset">
             <legend class="products-filter-second__title">ОСОБЕННОСТИ:</legend>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" id="slider" name="slider" type="checkbox">
-              <label class="products-filter-second__slider" for="slider">Слайдер</label>
+              <input class="products-filter-second__checkbox visually-hidden" checked id="slider" name="slider"
+                type="checkbox">
+              <label class="products-filter-second__slider " for="slider">Слайдер</label>
             </p>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" id="block" name="block" type="checkbox">
-              <label class="products-filter-second__block" for="block">Блок преимуществ</label>
+              <input class="products-filter-second__checkbox visually-hidden" id="block" name="block" type="checkbox">
+              <label class="products-filter-second__slider" for="block">Блок преимуществ</label>
             </p>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" id="news" name="news" type="checkbox">
-              <label class="products-filter-second__news" for="news">Новости</label>
+              <input class="products-filter-second__checkbox visually-hidden" id="news" name="news" type="checkbox">
+              <label class="products-filter-second__slider" for="news">Новости</label>
             </p>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" id="gallery" name="gallery" type="checkbox">
-              <label class="products-filter-second__gallery" for="gallery">Галерея</label>
+              <input class="products-filter-second__checkbox visually-hidden" id="gallery" name="gallery"
+                type="checkbox">
+              <label class="products-filter-second__slider" for="gallery">Галерея</label>
             </p>
             <p class="products-filter-second__line">
-              <input class="products-filter-second__checkbox" id="basket" name="basket" type="checkbox">
-              <label class="products-filter-second__basket" for="basket">Корзина</label>
+              <input class="products-filter-second__checkbox visually-hidden" id="basket" name="basket" type="checkbox">
+              <label class="products-filter-second__slider" for="basket">Корзина</label>
             </p>
           </fieldset>
           <button class="products-form__button" type="submit">ПОКАЗАТЬ</button>
@@ -92,8 +101,8 @@
               <li><a class="products-booklet__link" href="#">ПО ЦЕНЕ</a></li>
               <li><a class="products-booklet__link" href="#">ПО ТИПУ</a></li>
               <li><a class="products-booklet__link" href="#">ПО НАЗВАНИЮ</a></li>
-              <li class="products-booklet__img"><img src="img/icon-down-dir.svg" alt="icon"></li>
-              <li class="products-booklet__img"><img src="img/icon-up-dir.svg" alt="icon"></li>
+              <li class="products-booklet__img-1"><img src="img/icon-down-dir.svg" alt="icon"></li>
+              <li class="products-booklet__img-2"><img src="img/icon-up-dir.svg" alt="icon"></li>
             </ul>
           </div>
           <ul class="products-booklet-list-2">
@@ -116,7 +125,7 @@
               <img class="products-booklet-list-2__img" src="img/pink.png" alt="PINK">
               <div class="products-booklet-list-2__2">
                 <a class="products-booklet-list-2__link" href="#">PINK APP</a>
-                <p class="products-booklet-list-2__subtitle">Продуктовый лендинг
+                <p class="products-booklet-list-2__subtitle">Продуктовый лендинг<br>
                   приложения для iOS и Android</p>
                 <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
               </div>
@@ -151,7 +160,7 @@
               <img class="products-booklet-list-2__img" src="img/aplus.png" alt="A PLUS">
               <div class="products-booklet-list-2__5">
                 <a class="products-booklet-list-2__link" href="#">A PLUS</a>
-                <p class="products-booklet-list-2__subtitle">Лендинг курсов повышения квалификации</p>
+                <p class="products-booklet-list-2__subtitle">Лендинг курсов повышения<br> квалификации</p>
                 <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -162,7 +171,7 @@
               <img class="products-booklet-list-2__img" src="img/kvast.png" alt="КВАСТ">
               <div class="products-booklet-list-2__6">
                 <a class="products-booklet-list-2__link" href="#">КВАСТ</a>
-                <p class="products-booklet-list-2__subtitle">Промо-сайт производителя
+                <p class="products-booklet-list-2__subtitle">Промо-сайт производителя<br>
                   крафтового кваса</p>
                 <a class="products-booklet-list-2__price" href="#">9 900 руб.</a>
               </div>
@@ -182,10 +191,11 @@
               <li class="products-booklet-page__element"><a class="products-booklet-page__link-2" href="#">СЛЕДУЮЩАЯ</a>
               </li>
             </ul>
-
           </div>
+        </div>
+      </div>
     </section>
-    <section class="map">
+    <section class="map-1">
       <iframe class="google-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598444264980!5m2!1sru!2sru"
         style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -212,6 +222,24 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+ <section>
+   <button type="button"></button>
+   <div>
+   <span>Напишите нам</span>
+  </div>
+  <form action="">
+    <div>
+      <input type="text" name="" id="">
+      <label for="">Ваше имя:</label>
+    </div>
+    <div>
+      <input type="text" name="" id="">
+      <label for="">Ваш e-mail:</label>
+    </div>
+    <p>Текст письма:</p>
+  </form>
+  <button type="submit">ОТПРАВИТЬ</button>
+ </section>
 </body>
 
 </html>
