@@ -15,9 +15,9 @@
       <a class="main-nav__logo" href="index.html"><img class="main-nav__img" src="img/nerds-logo.svg"
           alt="Логотип nerds"></a>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Студия</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link ">Студия</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
-        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Магазин</a></li>
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--active">Магазин</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
       </ul>
       <div class="main-nav__basket">
@@ -222,24 +222,57 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
- <section>
-   <button type="button"></button>
-   <div>
-   <span>Напишите нам</span>
-  </div>
-  <form action="">
-    <div>
-      <input type="text" name="" id="">
-      <label for="">Ваше имя:</label>
+  <section class="modal-window">
+    <form class="modal-window__form" action="https://echo.htmlacademy.ru">
+      <span class="modal-window__write-us">Напишите нам</span>
+      <button class="modal-window__close" type="button"></button>
+      <div class="modal-window__name-surname">
+        <p class="modal-window__text-something">
+          <label class="modal-window__about-you" for="your-name">Ваше имя:</label>
+          <input class="modal-window__about-you-also" placeholder="Имя Фамилия" name="surname" id="your-name"
+            type="text">
+        </p>
+        <p class="modal-window__text-something">
+          <label class="modal-window__about-you" for="your-email">Ваш e-mail:</label>
+          <input class="modal-window__about-you-also" placeholder="email@example.com" name="your-mail" id="your-email"
+            type="text">
+        </p>
+      </div>
+      <p class="modal-window__text-us">
+        <label class="modal-window__leave-message" for="your-message">Текст письма:</label>
+        <textarea class="modal-window__your-message" placeholder="В свободной форме" name="your-message"
+          id="your-message" rows="5"></textarea>
+      </p>
+
+      <button class="modal-window__button-send" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </section>
+
+
+  <!-- </footer>
+  <section class="footer-modalwindow">
+    <button class="footer-modalwindow__button" type="button"></button>
+    <div class="footer-modalwindow__block">
+      <span class="footer-modalwindow__subtitle">Напишите нам</span>
     </div>
-    <div>
-      <input type="text" name="" id="">
-      <label for="">Ваш e-mail:</label>
+    <form class="footer-modalwindow__form" action="https://echo.htmlacademy.ru">
+      <div class="footer-modalwindow-elements">
+        <div class="footer-modalwindow__login">
+        <input class="footer-modalwindow__enter" type="text" name="login" id="login">
+        <label class="footer-modalwindow__label" for="login">Ваше имя:</label>
+      </div>
+      <div class="footer-modalwindow__login">
+        <input class="footer-modalwindow__enter" type="text" name="e-mail" id="e-mail">
+        <label class="footer-modalwindow__label" for="e-mail">Ваш e-mail:</label>
+      </div>
     </div>
-    <p>Текст письма:</p>
-  </form>
-  <button type="submit">ОТПРАВИТЬ</button>
- </section>
+    <div class="footer-modalwindow__textarea">
+      <label class="footer-modalwindow__labeltext" for="text">Текст письма:</label>
+      <textarea class="footer-modalwindow__text" name="text" id="text" cols="20" rows="5"></textarea>
+    </div>
+    </form>
+    <button class="footer-modalwindow__send" type="submit">ОТПРАВИТЬ</button>
+  </section> -->
 </body>
 
 </html>
