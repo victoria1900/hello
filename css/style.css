@@ -888,6 +888,7 @@ body {
   margin-top: 24px;
   margin-left: 4px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .products-form__button:hover {
@@ -1427,11 +1428,14 @@ body {
   margin-top: 47px;
   margin-left: 100px;
   border-radius: 3px;
+  cursor: pointer;
 }
-.modal-window__button-send:hover{
+
+.modal-window__button-send:hover {
   background-color: #e74246;
 }
-.modal-window__button-send:focus{
+
+.modal-window__button-send:focus {
   background-color: #d7373b;
   outline: none;
   color: rgba(255, 255, 255, 0.3);
