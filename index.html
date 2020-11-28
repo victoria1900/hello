@@ -158,8 +158,36 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <section class="modal-window modal container">
+    <form class="modal-window__form" action="https://echo.htmlacademy.ru">
+      <span class="modal-window__write-us">Напишите нам</span>
+      <button class="modal-window__close" type="button"></button>
+      <div class="modal-window__name-surname">
+        <p class="modal-window__text-something">
+          <label class="modal-window__about-you" for="your-name">Ваше имя:</label>
+          <input class="modal-window__about-you-also" placeholder="Имя Фамилия" name="surname" id="your-name"
+            type="text">
+        </p>
+        <p class="modal-window__text-something">
+          <label class="modal-window__about-you" for="your-email">Ваш e-mail:</label>
+          <input class="modal-window__about-you-also" placeholder="email@example.com" name="your-mail" id="your-email"
+            type="text">
+        </p>
+      </div>
+      <p class="modal-window__text-us">
+        <label class="modal-window__leave-message" for="your-message">Текст письма:</label>
+        <textarea class="modal-window__your-message" placeholder="В свободной форме" name="your-message"
+          id="your-message" rows="5"></textarea>
+      </p>
+
+      <button class="modal-window__button-send" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </section>
+
+
   <!-- popup -->
   <script src="js/slider.js"></script>
+  <script src="js/modal-window.js"></script>
 </body>
 
 </html>
